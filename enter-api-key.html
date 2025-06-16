@@ -9,12 +9,12 @@
     <div>Please enter a valid API key.</div>
     <form>
         <input type="email" id="apiKey" name="apiKey">
-        <button type="submitApiKey">Submit</button>
+        <button id="submitApiKey">Submit</button>
     </form>
 
     <script>
         let rootPath = "https://mysite.itvarsity.org/api/ContactBook/";
-        document.getElementById("apiKey").addEventListener("click", setApiKey);
+        document.getElementById("submitApiKey").addEventListener('click', setApiKey);
 
         function setApiKey(e){
             e.preventDefault();
